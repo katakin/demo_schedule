@@ -1,0 +1,41 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gruppa %><br />
+    <%= f.text_field :gruppa %>
+  </div>
+  <div class="field">
+    <%= f.label :predmet %><br />
+    <%= f.text_field :predmet %>
+  </div>
+  <div class="field">
+    <%= f.label :prepod %><br />
+    <%= f.text_field :prepod %>
+  </div>
+  <div class="field">
+    <%= f.label :audit %><br />
+    <%= f.text_field :audit %>
+  </div>
+  <div class="field">
+    <%= f.label :para %><br />
+    <%= f.number_field :para %>
+  </div>
+  <div class="field">
+    <%= f.label :den %><br />
+    <%= f.text_field :den %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

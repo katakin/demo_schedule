@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gruppa:</b>
+  <%= @event.gruppa %>
+</p>
+
+<p>
+  <b>Predmet:</b>
+  <%= @event.predmet %>
+</p>
+
+<p>
+  <b>Prepod:</b>
+  <%= @event.prepod %>
+</p>
+
+<p>
+  <b>Audit:</b>
+  <%= @event.audit %>
+</p>
+
+<p>
+  <b>Para:</b>
+  <%= @event.para %>
+</p>
+
+<p>
+  <b>Den:</b>
+  <%= @event.den %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

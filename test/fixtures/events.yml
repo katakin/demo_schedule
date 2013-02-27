@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gruppa: MyString
+  predmet: MyString
+  prepod: MyString
+  audit: MyString
+  para: 1
+  den: MyString
+
+two:
+  gruppa: MyString
+  predmet: MyString
+  prepod: MyString
+  audit: MyString
+  para: 1
+  den: MyString
